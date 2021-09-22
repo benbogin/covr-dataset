@@ -9,16 +9,6 @@ See [our paper]() for details, and the [dataset webpage]() for the leaderboard a
 
 Useful links:
 
-* [Download dataset]()
-* [Running experiments]()
-* [Generating samples and extending the dataset]()
-
-## Reference
-
-```
-@article{Wolfson2020Break,
-  title={COVR: A Test-Bed for Visually Grounded Compositional Generalization
-with Real Images},
-  author={Bogin, Ben and Gupta, Shivanshu and Gardner, Matt and Gardner, Matt and Berant, Jonathan},
-  year={2021}
-}
+* [Download dataset](https://drive.google.com/file/d/10xlQ6isRdGX94BypoqN6klniGeqdLBJA/view?usp=sharing)
+* [Running experiments](experiments)
+* Generating samples and extending the dataset (to be available soon)
