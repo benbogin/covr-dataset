@@ -7,8 +7,18 @@
 
 See [our paper]() for details, and the [dataset webpage](https://covr-dataset.github.io/) for the leaderboard and other details.
 
-Useful links:
+## Download dataset
 
+The dataset is available at this link:
 * [Download dataset](https://drive.google.com/file/d/10xlQ6isRdGX94BypoqN6klniGeqdLBJA/view?usp=sharing)
+
+## Running experiments
+
+Please see the following page for code and instructions on how to reproduce our results: 
 * [Running experiments](experiments)
-* Generating samples and extending the dataset (to be available soon)
+
+## Creating more splits
+This will be available soon!
+
+## Generating samples and extending the dataset
+This will be available soon!
