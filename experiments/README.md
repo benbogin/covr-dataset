@@ -3,7 +3,7 @@
 The following are instructions to replicate the experiments and results from the COVR paper.
 
 1. Download and unzip the [COVR dataset](https://drive.google.com/file/d/10xlQ6isRdGX94BypoqN6klniGeqdLBJA/view?usp=sharing) into the `data` directory.
-2. Download and unzip the [image features of imSitu and Visual Genome scenes](https://drive.google.com/file/d/1A5xoEe8aoO6ambg9WCdyl7yAhljf7Oox/view?usp=sharing).
+2. Download and unzip the [image features of imSitu and Visual Genome scenes](https://storage.googleapis.com/ai2i/COVR/img_features.zip) (~55GB).
 3. Download [VisualBERT pre-trained model file](https://sid.erda.dk/share_redirect/GCBlzUuoJl) into the `pretrained_volta/volta_models` directory
    * (_this is only necessary if you want to train models starting from a pre-trained model_)
    * Links to additional Volta models are available in [Volta's repository](https://github.com/e-bug/volta/blob/main/MODELS.md).
