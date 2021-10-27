@@ -36,6 +36,9 @@ class VisualBertEncoder(Model):
         self.max_seq_length = max_seq_length
         self.encoder = BertForVLTasks.from_pretrained(pretrained_model_path,
                                                       config=config, num_labels=self.vocab.get_vocab_size("labels"))
+        if not self.encoder:
+            raise ValueError(f"The Volta encoder could not have been loaded. Please check if the model exists in the "
+                             f"following path: {pretrained_model_path}")
 
         # Using the bert tokenizer
         self.tokenizer = BertTokenizer.from_pretrained(
