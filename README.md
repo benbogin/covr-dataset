@@ -18,7 +18,8 @@ Please see the following page for code and instructions on how to reproduce our 
 * [Running experiments](experiments)
 
 ## Creating more splits
-This will be available soon!
+Please see the following page for code and instructions on how to create new splits:
+* [Compositionally Splitting COVR](splits)
 
 ## Generating samples and extending the dataset
 This will be available soon!
