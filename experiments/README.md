@@ -3,13 +3,32 @@
 The following are instructions to replicate the experiments and results from the COVR paper.
 
 1. Download and unzip the [COVR dataset](https://drive.google.com/file/d/10xlQ6isRdGX94BypoqN6klniGeqdLBJA/view?usp=sharing) into the `data` directory.
-2. Download and unzip the [image features of imSitu and Visual Genome scenes](https://storage.googleapis.com/ai2i/COVR/img_features.zip) (~55GB).
+2. Download and unzip the [image features of imSitu and Visual Genome scenes](https://storage.googleapis.com/ai2i/COVR/img_features.zip) (~55GB) into the `data` directory.
 3. Download [VisualBERT pre-trained model file](https://sid.erda.dk/share_redirect/GCBlzUuoJl) into the `pretrained_volta/volta_models` directory
    * (_this is only necessary if you want to train models starting from a pre-trained model_)
    * Links to additional Volta models are available in [Volta's repository](https://github.com/e-bug/volta/blob/main/MODELS.md).
      Models we tested with are: `VisualBERT (CTRL) - ctrl_visualbert_base` and `ViLBERT (CTRL) - ctrl_vilbert_base` (others should generally work as well)
    * you can also load the models from a different directory by setting the `--volta-path` argument of `train.py`
-4. Install all required packages (use pytorch 1.8.x)
+4. You should have the following data/file structure:
+```
+experiments
+├── ...
+├── data
+│   ├── train.jsonl
+│   ├── val.jsonl
+│   ├── test.jsonl
+│   ├── gqa_imsitu_features.h5
+│   └── gqa_imsitu_key_to_index.json
+└── pretrained_volta
+    ├── volta_configs
+    │   ├── ctrl_visualbert_base.json
+    │   └── ...
+    └── volta_models
+        ├── ctrl_visualbert_base
+        │   └── pytorch_model.bin
+        └── ...
+```
+5. Install all required packages (use pytorch 1.8.x)
 ```
 pip install -r requirements.txt
 ```
