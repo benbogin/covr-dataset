@@ -37,7 +37,7 @@ if __name__ == "__main__":
         settings = with_fallback(text_baseline_settings, settings)
 
     settings['model']['pretrained_model_path'] = os.path.join(args.volta_path, args.volta_model)
-    settings['model']['pretrained_model_config'] = os.path.join("train_configs/volta_configs", f"{args.volta_model}.json")
+    settings['model']['pretrained_model_config'] = os.path.join("pretrained_volta/volta_configs", f"{args.volta_model}.json")
 
     pretrained_config = json.load(open(settings['model']['pretrained_model_config']))
     settings['dataset_reader']['num_vis_position_features'] = pretrained_config['num_locs']
