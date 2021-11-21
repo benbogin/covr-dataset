@@ -14,12 +14,13 @@ The dataset is available at this link:
 
 ## Running experiments
 
-Please see the following page for code and instructions on how to reproduce our results: 
+How to reproduce our results: 
 * [Running experiments](experiments)
 
 ## Creating more splits
-Please see the following page for code and instructions on how to create new splits:
+How to create new splits:
 * [Compositionally Splitting COVR](splits)
 
 ## Generating samples and extending the dataset
-This will be available soon!
+How to generate COVR (not all code available yet):
+* [Generating COVR examples](generation)

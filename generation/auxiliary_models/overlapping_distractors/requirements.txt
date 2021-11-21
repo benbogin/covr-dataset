@@ -1,0 +1,4 @@
+allennlp==2.2.0
+torch==1.8.1
+numpy==1.18.1
+transformers==4.2.2
