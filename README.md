@@ -5,7 +5,7 @@
 
 **COVR** is a test-bed for visually-grounded compositional generalization with real images. You can use COVR to train Visual Question Answering (VQA) models and evaluate it on various compositional tests, and possibly create your own new compositional splits. 
 
-See [our paper]() for details, and the [dataset webpage](https://covr-dataset.github.io/) for the leaderboard and other details.
+See [our paper](https://arxiv.org/pdf/2109.10613) for details, and the [dataset webpage](https://covr-dataset.github.io/) for the leaderboard and other details.
 
 ## Download dataset
 
