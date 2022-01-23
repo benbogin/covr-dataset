@@ -22,5 +22,5 @@ How to create new splits:
 * [Compositionally Splitting COVR](splits)
 
 ## Generating samples and extending the dataset
-How to generate COVR (not all code available yet):
+How to generate COVR:
 * [Generating COVR examples](generation)

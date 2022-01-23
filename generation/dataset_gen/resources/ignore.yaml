@@ -1,0 +1,29 @@
+nouns:
+  - head
+  - snow
+  - ground
+  - sky
+  - road
+  - roadway
+  - grass
+  - field
+  - wall
+  - sidewalk
+  - street
+  - agent
+  - agentpart
+  - item
+relations:
+  - of
+  - with
+  - to the left of
+  - to the right of
+  - complaining to
+pairs:
+  - wearing,shoes
+  - wearing,sock
+  - wearing,socks
+  - wearing,shoe
+  - wearing,shirt
+  - wearing,pants
+  - wearing,clothes

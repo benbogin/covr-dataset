@@ -1,0 +1,9 @@
+tqdm
+neo4j
+redis
+inflect
+numpy
+PyYAML
+srsly
+overrides
+wget

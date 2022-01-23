@@ -1,0 +1,261 @@
+questions:
+  - text: 'There are {COMPARISON} images with {REF_1} {THAN} images with {REF_2}'
+    class: 'compare_count'
+    pattern_name: 'compare_count'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique_images
+        dependencies: [ 0 ]
+      - operation: count
+        dependencies: [ 1 ]
+      - operation: refer
+        arguments: REF_2
+      - operation: unique_images
+        dependencies: [ 3 ]
+      - operation: count
+        dependencies: [ 4 ]
+      - operation: COMPARISON_MODULE
+        dependencies: [ 2, 5 ]
+  - text: 'There are {COMPARISON} {REF_1} {THAN} {REF_2}'
+    class: 'compare_count'
+    setup:
+      - plural
+    pattern_name: 'compare_count'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: count
+        dependencies: [ 0 ]
+      - operation: refer
+        arguments: REF_2
+      - operation: count
+        dependencies: [ 2 ]
+      - operation: COMPARISON_MODULE
+        dependencies: [ 1, 3 ]
+  - text: '{QUANTIFIER} {REF_1_SUBJECT} {REF_1_NO_SUBJECT}'
+    class: 'all_subject'
+    pattern_name: 'quantifier'
+    program:
+      - operation: refer
+        arguments: REF_1_SUBJECT
+      - operation: QUANTIFIER_MODULE
+        dependencies: [ 0 ]
+        arguments: [ REF_1_NO_SUBJECT_CONDITION ]
+  - text: '{QUANTIFIER} {REF_1} are {ATTR_POS}'
+    class: 'all_attr'
+    pattern_name: 'quantifier'
+    program:
+      - operation: refer
+        arguments: REF_1_SUBJECT
+      - operation: QUANTIFIER_MODULE
+        dependencies: [ 0 ]
+        arguments:
+          -
+            - operation: scene
+            - operation: filter
+              dependencies: [ 0 ]
+              arguments: [ATTR_POS]
+  - text: 'Do all {REF_1} have the same {ATTR_TYPE_1}?'
+    class: 'all_attr'
+    pattern_name: 'quantifier_same_attr'
+    program:
+      - operation: refer
+        arguments: REF_1_SUBJECT
+      - operation: all_same
+        dependencies: [ 0 ]
+        arguments: [ ATTR_TYPE_1 ]
+  - text: 'Does {REF_1} and {POS_REF_2} have the same {ATTR_TYPE_1}?'
+    class: 'common_attribute'
+    pattern_name: 'specific_same_attr'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique
+        dependencies: [ 0 ]
+      - operation: query_attr
+        dependencies: [ 1 ]
+        arguments: [ ATTR_TYPE_1 ]
+      - operation: refer
+        arguments: POS_REF_2
+      - operation: unique
+        dependencies: [ 3 ]
+      - operation: query_attr
+        dependencies: [ 4 ]
+        arguments: [ ATTR_TYPE_1 ]
+      - operation: eq
+        dependencies: [ 2, 5 ]
+  - text: 'What {BE} {REF_1_NO_RELATION} {RELATION_NAME}?'
+    class: 'query_object'
+    pattern_name: 'query_object'
+    program:
+      - operation: refer
+        arguments: REF_1_NO_RELATION
+      - operation: assert_unique
+        dependencies: [ 0 ]
+      - operation: scene
+      - operation: with_relation_object
+        arguments: [ RELATION ]
+        dependencies: [ 1, 2 ]
+      - operation: unique
+        dependencies: [ 3 ]
+      - operation: query_name
+        dependencies: [ 4 ]
+  - text: '{REF_1_NO_RELATION} {BE} {RELATION_NAME} {OBJ_TEXT} or {OBJ_NEG_TEXT}?'
+    class: 'query_object'
+    pattern_name: 'choose_object'
+    program:
+      - operation: refer
+        arguments: REF_1_NO_RELATION
+      - operation: assert_unique
+        dependencies: [ 0 ]
+      - operation: scene
+      - operation: with_relation_object
+        arguments: [ RELATION ]
+        dependencies: [ 1, 2 ]
+      - operation: unique
+        dependencies: [ 3 ]
+      - operation: choose_name
+        dependencies: [ 4 ]
+        arguments: [ OBJ, OBJ_NEG ]
+  - text: 'What is the {ATTR_TYPE_1} of {REF_1}?'
+    class: 'query_attr'
+    pattern_name: 'query_attr'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique
+        dependencies: [ 0 ]
+      - operation: query_attr
+        dependencies: [ 1 ]
+        arguments: [ ATTR_TYPE_1 ]
+  - text: 'Is {REF_1} {ATTR_POS}?'
+    class: 'query_attr'
+    pattern_name: 'verify_attr'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique
+        dependencies: [ 0 ]
+      - operation: verify_attr
+        dependencies: [ 1 ]
+        arguments: [ ATTR_POS ]
+  - text: 'Is {REF_1} {REL_1} {OBJ} or {REL_NEG} it?'
+    class: 'choose_rel'
+    pattern_name: 'choose_rel'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique
+        dependencies: [ 0 ]
+      - operation: refer
+        arguments: OBJ
+      - operation: relation_between_nouns
+        dependencies: [ 1, 2 ]
+      - operation: unique
+        dependencies: [ 3 ]
+      - operation: query_name
+        dependencies: [ 4 ]
+      - operation: choose_relation
+        dependencies: [ 5 ]
+        arguments: [ REL_1, REL_NEG ]
+  - text: 'Is {REF_1} {ATTR_POS} or {ATTR_NEG}?'
+    class: 'query_attr'
+    pattern_name: 'choose_attr'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique
+        dependencies: [ 0 ]
+      - operation: choose_attr
+        dependencies: [ 1 ]
+        arguments: [ ATTR_POS, ATTR_NEG ]
+  - text: 'Is there {LOGIC1} {REF_1} {LOGIC2} {REF_2}?'
+    class: 'multiple_ref'
+    pattern_name: 'multiple_ref'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: exists
+        dependencies: [ 0 ]
+      - operation: refer
+        arguments: REF_2
+      - operation: exists
+        dependencies: [ 2 ]
+      - operation: LOGIC_MODULE
+        dependencies: [ 1, 3 ]
+  - text: 'There {BE} {QUANTIFIER} {NUM_POS} {IMAGES} with {REF_1}'
+    class: 'count_ref'
+    pattern_name: 'verify_count_ref'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique_images
+        dependencies: [ 0 ]
+      - operation: count
+        dependencies: [ 1 ]
+      - operation: NUM_QUANTIFIER_MODULE
+        dependencies: [ 2 ]
+        arguments: [ NUM_POS ]
+  - text: 'There {BE} {QUANTIFIER} {NUM_POS} {REF_1}'
+    class: 'count_ref'
+    pattern_name: 'verify_count_ref'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: count
+        dependencies: [ 0 ]
+      - operation: NUM_QUANTIFIER_MODULE
+        dependencies: [ 1 ]
+        arguments: [ NUM_POS ]
+  - text: 'How many images with {REF_1}?'
+    class: 'count_ref'
+    pattern_name: 'count_ref'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: unique_images
+        dependencies: [ 0 ]
+      - operation: count
+        dependencies: [ 1 ]
+  - text: 'How many {REF_1}?'
+    class: 'count_ref'
+    pattern_name: 'count_ref'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: count
+        dependencies: [ 0 ]
+  - text: 'There {BE} {QUANTIFIER} {NUM_POS} {IMAGES} that contain exactly {NUM_POS_GROUP_BY} {REF_1}'
+    class: 'count_ref_group_by'
+    pattern_name: 'verify_count_ref_group_by'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: group_by_images
+        dependencies: [ 0 ]
+      - operation: keep_if_values_count_eq
+        dependencies: [ 1 ]
+        arguments: [ NUM_POS_GROUP_BY ]
+      - operation: keys
+        dependencies: [ 2 ]
+      - operation: count
+        dependencies: [ 3 ]
+      - operation: NUM_QUANTIFIER_MODULE
+        dependencies: [ 4 ]
+        arguments: [ NUM_POS ]
+  - text: 'How many images contain {QUANTIFIER} {NUM_POS_GROUP_BY} {REF_1}?'
+    class: 'count_ref_group_by'
+    pattern_name: 'count_ref_group_by'
+    program:
+      - operation: refer
+        arguments: REF_1
+      - operation: group_by_images
+        dependencies: [ 0 ]
+      - operation: KEEP_IF_VALUES_COUNT_QUANTIFIER
+        dependencies: [ 1 ]
+        arguments: [ NUM_POS_GROUP_BY ]
+      - operation: keys
+        dependencies: [ 2 ]
+      - operation: count
+        dependencies: [ 3 ]

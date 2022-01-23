@@ -1,0 +1,836 @@
+attributes:
+  color:
+    - red
+    - green
+    - white
+    - black
+    - silver
+    - purple
+    - brown
+    - orange
+    - tan
+    - blue
+    - yellow
+    - light blue
+    - gray
+    - beige
+    - pink
+    - gold
+    - light brown
+    - cream colored
+    - dark brown
+    - khaki
+    - dark blue
+    - maroon
+    - teal
+  material:
+    - wood
+    - plastic
+    - glass
+    - metal
+    - wire
+    - wicker
+    - porcelain
+    - stainless steel
+    - leather
+    - cardboard
+    - iron
+    - paper
+    - concrete
+    - stone
+    - rubber
+    - brick
+    - aluminum
+    - hardwood
+    - steel
+    - clay
+    - cobblestone
+    - granite
+    - marble
+    - wool
+    - denim
+    - bamboo
+    - chrome
+    - brass
+    - copper
+    - lace
+    - mesh
+    - tin
+    - styrofoam
+    - cloth
+    - bronze
+    - silk
+    - straw
+    - crystal
+    - rock
+    - asphalt
+    - cotton
+  pattern:
+    - striped
+    - checkered
+    - dotted
+  shape:
+    - square
+    - rectangular
+    - round
+    - triangular
+    - octagonal
+  brand:
+    - adidas
+    - nike
+objects:
+  aircraft:
+  - airplane
+  - helicopter
+  - airplanes
+  - jet
+  animal:
+  - kittens
+  - goat
+  - calf
+  - squirrel
+  - wolves
+  - snail
+  - ostriches
+  - dolphin
+  - spider
+  - goats
+  - wolf
+  - antelope
+  - lizard
+  - panda bear
+  - duck
+  - dragon
+  - hippos
+  - swans
+  - bears
+  - elephants
+  - seal
+  - horse
+  - dolphins
+  - frog
+  - bunny
+  - kitten
+  - peacock
+  - puppy
+  - ducks
+  - poodle
+  - gorilla
+  - dog
+  - camel
+  - sharks
+  - rabbit
+  - pig
+  - cheetah
+  - sheep
+  - crab
+  - tiger
+  - cow
+  - cats
+  - dogs
+  - polar bear
+  - shark
+  - geese
+  - penguins
+  - moose
+  - snake
+  - elephant
+  - dinosaurs
+  - snakes
+  - dinosaur
+  - monkey
+  - dragonfly
+  - octopus
+  - whale
+  - seagull
+  - cows
+  - seagulls
+  - butterflies
+  - lobster
+  - giraffe
+  - panda
+  - lamb
+  - zebra
+  - donkeys
+  - donkey
+  - giraffes
+  - chickens
+  - turtle
+  - bee
+  - antelopes
+  - bison
+  - ostrich
+  - lambs
+  - bear
+  - cat
+  - zebras
+  - goose
+  - butterfly
+  - penguin
+  - horses
+  - flamingo
+  - deer
+  - leopard
+  - swan
+  - pandas
+  - alligator
+  - lion
+  - rhino
+  - hippo
+  - bull
+  appliance:
+  - microwave
+  - food processor
+  - air conditioner
+  - dryer
+  - toaster
+  - ovens
+  - washing machine
+  - ice maker
+  - refrigerator
+  - mixer
+  - rice cooker
+  - heater
+  - pizza oven
+  - vacuum
+  - blender
+  - hand dryer
+  - cooker
+  - oven
+  - coffee maker
+  - dishwasher
+  - radiator
+  - gas stove
+  - stove
+  - microwave oven
+  - toaster oven
+  bag:
+  - purse
+  - shopping bag
+  - pouch
+  - backpack
+  - backpacks
+  - handbag
+  - trash bag
+  baked good:
+  - loaf
+  - biscuit
+  - waffle
+  - pita
+  - pretzels
+  - bread
+  - bun
+  - donut
+  - bagels
+  - waffles
+  - pretzel
+  - pastry
+  - donuts
+  - pastries
+  - bagel
+  - biscuits
+  - buns
+  - pie
+  - bread loaf
+  - casserole
+  bird:
+  - bird
+  - owls
+  - eagle
+  - pigeon
+  - owl
+  - angry bird
+  - pigeons
+  - parrots
+  - birds
+  - parrot
+  clothing:
+  - tank top
+  - dresses
+  - jersey
+  - garment
+  - dress
+  - jeans
+  - leggings
+  - outfit
+  - uniform
+  - jackets
+  - underwear
+  - dress shirt
+  - glove
+  - vest
+  - gloves
+  - snowsuit
+  - hats
+  - costume
+  - blouse
+  - kimono
+  - snow pants
+  - sweater
+  - hat
+  - cowboy hat
+  - pajamas
+  - cap
+  - sweatshirt
+  - suits
+  - coats
+  - jumpsuit
+  - chef hat
+  - coat
+  - outfits
+  - socks
+  - swimsuit
+  - sock
+  - gown
+  - cloths
+  - shirts
+  - blazer
+  - shirt
+  - suit
+  - apron
+  - raincoat
+  - polo shirt
+  - shorts
+  - bikini
+  - t-shirt
+  - jacket
+  - robe
+  - trunks
+  - vests
+  - undershirt
+  - skirt
+  - pants
+  - wetsuit
+  color:
+  - orange
+  cooking utensil:
+  - skillet
+  - rolling pin
+  - pan
+  - tea kettle
+  - pizza pan
+  - pans
+  - mixing bowl
+  - baking pan
+  - grater
+  - wok
+  - cooking pot
+  - cake pan
+  - kettle
+  - cutting board
+  - ladles
+  - whisk
+  - tongs
+  - ladle
+  - baking sheet
+  - coffee pot
+  - spatula
+  - tea pot
+  dessert:
+  - ice cream
+  - cakes
+  - cake
+  - brownie
+  - oreo
+  - cheesecake
+  - desserts
+  - brownies
+  - cupcakes
+  - fudge
+  - pudding
+  - dessert
+  - cupcake
+  - cotton dessert
+  device:
+  - television
+  - controllers
+  - phones
+  - headphones
+  - printers
+  - earphones
+  - hard drive
+  - cameras
+  - wii
+  - video camera
+  - phone
+  - dvd player
+  - calculator
+  - cell phones
+  - speaker
+  - computer mouse
+  - hair dryer
+  - remote controls
+  - screen
+  - computers
+  - laptop
+  - ipod
+  - laptops
+  - controller
+  - wii controllers
+  - projector
+  - cell phone
+  - router
+  - keyboard
+  - tablet
+  - wii controller
+  - xbox controller
+  - microphone
+  - radio
+  - console
+  - televisions
+  - monitor
+  - game controller
+  - keyboards
+  - monitors
+  - speakers
+  - charger
+  - computer monitor
+  - desktop computer
+  - camera
+  - gadget
+  - computer
+  - printer
+  - remote control
+  drink:
+  - juice
+  - smoothie
+  - champagne
+  - milk
+  - liquor
+  - coke
+  - soft drink
+  - wines
+  - lemonade
+  - milkshake
+  - cappuccino
+  - alcohol
+  - tea
+  fast food:
+  - hot dog
+  - cheeseburger
+  - fries
+  - pizza pie
+  - hamburger
+  - hamburgers
+  - pizza
+  - hot dogs
+  - pizzas
+  flavor:
+  - chocolate
+  - cheese
+  - strawberry
+  food:
+  - mint
+  - burrito
+  - dip
+  - pasta
+  - mozzarella
+  - shrimp
+  - tortilla
+  - candy
+  - onion rings
+  - honey
+  - potato chips
+  - noodles
+  - parmesan cheese
+  - crackers
+  - flatbread
+  - pancakes
+  - ravioli
+  - dumplings
+  - mushroom
+  - pancake
+  - cheese cube
+  - sandwiches
+  - dog food
+  - tofu
+  - coleslaw
+  - pecan
+  - sushi
+  - nuts
+  - salad
+  - marshmallow
+  - cereal
+  - pistachio
+  - nut
+  - broth
+  - guacamole
+  - onion ring
+  - oatmeal
+  - potato salad
+  - stir fry
+  - peanut
+  - taco
+  - caramel
+  - soup
+  - cat food
+  - eggs
+  - almond
+  - cookie
+  - mexican food
+  - walnuts
+  - coconuts
+  - rice
+  - snacks
+  - walnut
+  - tuna
+  - gummy bear
+  - hummus
+  - cream cheese
+  - anchovies
+  - peanuts
+  - pasta salad
+  - popcorn
+  - peanut butter
+  - macaroni
+  - nutella
+  - salmon
+  - toast
+  - sandwich
+  - chocolate chips
+  - coconut
+  - cracker
+  - omelette
+  - egg
+  - plantains
+  - snack
+  - mushrooms
+  - feta cheese
+  - stew
+  - candies
+  - chinese food
+  - cookies
+  - seafood
+  - hotdog bun
+  - chicken breast
+  - granola
+  - french toast
+  - almonds
+  - mashed potatoes
+  - sour cream
+  - egg roll
+  - roast beef
+  - yogurt
+  - cotton candy
+  fruit:
+  - kiwis
+  - gourd
+  - apples
+  - peaches
+  - pears
+  - cranberry
+  - berry
+  - bananas
+  - pineapple
+  - grape
+  - lime
+  - lemon
+  - lemons
+  - fruit
+  - fruits
+  - pineapples
+  - melons
+  - pear
+  - banana
+  - strawberries
+  - raspberries
+  - melon
+  - tangerine
+  - papaya
+  - raisin
+  - apple
+  - kiwi
+  - raisins
+  - mango
+  - oranges
+  - watermelon
+  - blackberries
+  - cherry
+  - berries
+  - grapefruit
+  - cranberries
+  - blueberries
+  - pomegranate
+  - mangoes
+  - raspberry
+  - cherries
+  - blueberry
+  - watermelons
+  - grapes
+  - peach
+  furniture:
+  - desk
+  - nightstands
+  - entertainment center
+  - couches
+  - beds
+  - cupboard
+  - tables
+  - bar stools
+  - nightstand
+  - bookshelves
+  - coffee table
+  - computer desk
+  - drawer
+  - bookshelf
+  - dresser
+  - table
+  - chairs
+  - sofa
+  - office chair
+  - ottoman
+  - armchair
+  - bar stool
+  - medicine cabinet
+  - side table
+  - bookcase
+  - wardrobe
+  - tv stand
+  - cabinets
+  - drawers
+  - cupboards
+  - chair
+  - couch
+  - closet
+  - shelves
+  - dining table
+  - shelf
+  - end table
+  - bed
+  - cabinet
+  instrument:
+  - trumpet
+  - piano
+  - drum
+  - guitar
+  liquid:
+  - soda
+  - beer
+  - coffee
+  - wine
+  material:
+  - leather
+  - glass
+  - metal
+  - wood
+  - plastic
+  - brick
+  - concrete
+  - porcelain
+  meat:
+  - meatballs
+  - ham
+  - sausages
+  - sausage
+  - burger
+  - meat
+  - steak
+  - pepperoni
+  - bacon
+  - ribs
+  - pork
+  - meats
+  - beef
+  - chicken
+  pastry:
+  - muffins
+  - croissant
+  - muffin
+  - croissants
+  place:
+  - hotel
+  - place
+  - stage
+  - beach
+  - supermarket
+  - sea
+  - lobby
+  - garage
+  - lake
+  - village
+  - parking lot
+  - swimming pool
+  - yard
+  - gym
+  - airport
+  - lawn
+  - backyard
+  - field
+  - harbor
+  - city
+  - stadium
+  - restroom
+  - shop
+  - orchard
+  - market
+  - ocean
+  - plain
+  - store
+  - display
+  - courtyard
+  - museum
+  - library
+  - classroom
+  - salon
+  - swamp
+  - pond
+  - kiosk
+  - garden
+  - hotel room
+  - restaurant
+  - farm
+  - patio
+  - auditorium
+  - town
+  - church
+  - cafe
+  - station
+  - desert
+  - porch
+  - marina
+  - pasture
+  - bakery
+  - forest
+  - river
+  - street
+  - park
+  - terminal
+  - skate park
+  - train station
+  - zoo
+  - shore
+  pokemon:
+  - pikachu
+  road:
+  - pavement
+  - highway
+  - path
+  - roadway
+  - road
+  - railroad
+  - sidewalk
+  - roadside
+  - runway
+  - walkway
+  room:
+  - bedroom
+  - office
+  - living room
+  - dining room
+  - bathroom
+  - kitchen
+  sauce:
+  - mustard
+  - salad dressing
+  - gravy
+  - pesto
+  - mayonnaise
+  - ketchup
+  - dressing
+  - tomato sauce
+  sign:
+  - street sign
+  - stop sign
+  - traffic sign
+  - parking sign
+  toy:
+  - toy car
+  - teddy bears
+  - elmo
+  - stuffed dog
+  - dolls
+  - stuffed bears
+  - stuffed bear
+  - lego
+  - rubber duck
+  - doll
+  - stuffed animal
+  - stuffed animals
+  - teddy bear
+  - action figure
+  vegetable:
+  - zucchini
+  - avocados
+  - pumpkins
+  - sweet potato
+  - herb
+  - chili
+  - celery
+  - eggplant
+  - onion
+  - cabbage
+  - beets
+  - peas
+  - pepper
+  - olives
+  - tomato
+  - corn
+  - cauliflower
+  - artichokes
+  - spinach
+  - broccoli
+  - cucumbers
+  - beet
+  - sweet potatoes
+  - beans
+  - cucumber
+  - olive
+  - chickpeas
+  - avocado
+  - carrot
+  - artichoke
+  - vegetable
+  - basil
+  - pickles
+  - lettuce
+  - carrots
+  - tomatoes
+  - herbs
+  - asparagus
+  - onions
+  - vegetables
+  - squash
+  - parsley
+  - potatoes
+  - peppers
+  - pumpkin
+  - garlic
+  - potato
+  - pea
+  vehicle:
+  - truck
+  - jeep
+  - fire truck
+  - shuttle
+  - locomotive
+  - car
+  - van
+  - carriage
+  - buses
+  - tractor
+  - taxi
+  - trains
+  - ambulance
+  - trucks
+  - minivan
+  - trailer
+  - wagon
+  - school bus
+  - bus
+  - train car
+  - suv
+  - taxis
+  - cars
+  - train
+  watercraft:
+  - ship
+  - sailboat
+  - canoe
+  - boats
+  - sailboats
+  - boat
+  weapon:
+  - gun
+  - rifle
+  - spear
+  - sword

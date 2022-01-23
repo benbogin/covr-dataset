@@ -1,0 +1,124 @@
+contradicting_attributes:
+- abandoned,clean
+- abandoned,new
+- abandoned,driving
+- abandoned,busy
+- adidas,nike
+- adult,tiny
+- adult,baby
+- adult,fake
+contradicting_nouns:
+- man,woman
+- girl,man
+- male child,man
+- child,man
+- child,woman
+contradicting_predicted_attributes:
+- abandoned,fake
+- abandoned,clean
+- abandoned,new
+- abandoned,fresh
+- abandoned,reading
+- abandoned,modern
+- abandoned,vibrant
+- abandoned,formal
+- abandoned,professional
+- abandoned,traffic
+disjoint_predicted_relations:
+- wetting,standing behind
+- braiding,wiping
+- wiping,braiding
+- drenching with,exiting
+- hanging,reading
+- reading,hanging
+- rotting,falling to
+- begging,walking on
+- urinating,sitting behind
+- mending with,dropping from
+- playing on,farming
+- mashing,sucking
+- sucking,mashing
+- smearing with,applying to
+- splashing,standing near
+- clinging,begging
+- waxing,standing by
+- tearing,fastening
+entailing_attributes:
+- bald,balding
+- black,dark
+- brick,stone
+- brick,paved
+- brown,dark
+- brown,dark brown
+- brown,chocolate
+- cordless,wireless
+- crouching,squatting
+- dark,dark colored
+entailing_nouns:
+- man,person
+- person,woman
+- man,people
+- people,woman
+- people,person
+- girl,woman
+- girl,person
+- child,person
+- male child,person
+- boy,person
+- girl,people
+- child,people
+- lady,woman
+- child,male child
+- female,woman
+- male child,people
+- female,person
+- lady,person
+- guy,man
+entailing_predicted_nouns:
+- banana,plant
+- field,platform
+- soldier,target
+- person,speaker
+- food,raisins
+- decoration,mirror
+- business people,woman
+- person,yardmaster
+- apple,dish
+- beverage,smoothie
+- sound,voice
+- costume,dress
+- carriage,vehicle
+- people,smuggler
+- person,young person
+- item,parachute
+- back,target
+- lady,scarf
+- food,gravy
+- dessert,pineapple
+- shoulder,woman
+- lobster,object
+- tiara,woman
+- device,kite
+not_disjoint_relations:
+- near,next to
+- next to,near
+- behind,near
+- near,behind
+- in front of,near
+- near,in front of
+- on,on top of
+- on top of,on
+- by,near
+- near,by
+- near,on
+- behind,in front of
+- in front of,behind
+- behind,next to
+- next to,behind
+- in front of,next to
+- next to,in front of
+- above,near
+- near,above
+- by,next to
+- next to,by
+- by,in front of
