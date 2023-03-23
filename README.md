@@ -10,7 +10,8 @@ See [our paper](https://arxiv.org/pdf/2109.10613) for details, and the [dataset 
 ## Download dataset
 
 The dataset is available at this link:
-* [Download dataset](https://drive.google.com/file/d/10xlQ6isRdGX94BypoqN6klniGeqdLBJA/view?usp=sharing)
+* [Download dataset](https://drive.google.com/file/d/147sIPGpQTeLpdVp_ArrBgTm9PWBk3kg2)
+  * 23/3 - 1.0.1 - Added missing `paraphrased` field for validation and test sets
 
 ## Running experiments
 
